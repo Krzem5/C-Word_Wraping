@@ -26,7 +26,7 @@ void wrap_words(const char* dt,uint32_t w,word_wrap_data_t* o){
 		s++;
 	}
 	*(l+ll-1)=(uint32_t)((uintptr_t)s-st)+1;
-_skip_last:
+_skip_last:;
 	uint32_t* sc=malloc(ll*sizeof(uint32_t));
 	*(sc+ll-1)=0;
 	o->l=malloc(ll*sizeof(uint32_t));
